@@ -1,0 +1,52 @@
+{
+  "hosts": [
+    {
+      "name": "bob",
+      "is_proxy": false,
+      "ip_addr": "0.0.0.1",
+      "privkey": "-----",
+      "pubkey": "****",
+      "peers": [
+        {
+          "name": "alice",
+          "allowed_ips": ["0.0.0.0/24"],
+          "persistent_keepalive": 25
+        }
+      ]
+    },
+    {
+      "name": "alice",
+      "is_proxy": true,
+      "endpoint": "1.1.1.1:51820",
+      "ip_addr": "0.0.0.2/32",
+      "privkey": "XXXXXXXXXXXXXXXX",
+      "pubkey": "YYYYYYYYYYYYYYY",
+      "peers": [
+        {
+          "name": "bob",
+          "allowed_ips": ["0.0.0.1/32"],
+          "persistent_keepalive": 0
+        },
+        {
+          "name": "charlie",
+          "allowed_ips": ["0.0.0.3/32"],
+          "persistent_keepalive": 0
+        }
+      ]
+    },
+    {
+      "name": "charlie",
+      "is_proxy": false,
+      "ip_addr": "0.0.0.3/24",
+      "privkey": "AAAAAAAAAAAA",
+      "pubkey": "BBBBBBBBBBBBBBBBBBBB",
+      "peers": [
+        {
+          "name": "alice",
+          "allowed_ips": ["0.0.0.0/24"],
+          "persistent_keepalive": 25
+        }
+      ]
+    }
+  ]
+}
