@@ -6,6 +6,8 @@ In the example config file provided the generated config files will allow the be
 > Bob -> Alice -> Charlie
 > Charlie -> Alice -> Bob
 
+In the example config file all of Bobs traffic can be routed through Alice (also to the internet), so it can be used as a generic VPN too :)
+
 ## Usage
 
 `python main.py`
