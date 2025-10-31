@@ -6,3 +6,8 @@ In the example config file provided the generated config files will allow the be
 > Bob -> Alice -> Charlie
 > Charlie -> Alice -> Bob
 
+## Usage
+
+`python main.py`
+It reads in the configuration from a file `base.json`
+
