@@ -1,3 +1,6 @@
 **.json
 **.conf
 !example-config.json
+!configs/alice/*
+!configs/bob/*
+!configs/charlie/*
